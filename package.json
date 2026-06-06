@@ -23,20 +23,15 @@
       "assets/**"
     ],
     "win": {
-      "target": [
-        { "target": "nsis", "arch": ["x64"] },
-        { "target": "portable", "arch": ["x64"] }
-      ],
-      "icon": "assets/icon.ico"
-    },
-    "nsis": {
-      "oneClick": true,
-      "perMachine": false,
-      "allowToChangeInstallationDirectory": false,
-      "deleteAppDataOnUninstall": false,
-      "installerIcon": "assets/icon.ico",
-      "uninstallerIcon": "assets/icon.ico"
-    },
+  "target": [
+    { "target": "nsis", "arch": ["x64"] },
+    { "target": "portable", "arch": ["x64"] }
+  ]
+},
+"nsis": {
+  "oneClick": true,
+  "perMachine": false
+},
     "mac": {
       "target": "dmg",
       "icon": "assets/icon.png",
